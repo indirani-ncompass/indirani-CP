@@ -14,7 +14,7 @@ app.get('/users',(req,res)=>{
     res.send("hello from user");
 })
 
-app.listen(PORT, (error) =>{
+app.listen(PORT, '0.0.0.0' ,(error) =>{
     if(!error)
         console.log("Server is Successfully Runningand App is listening on port "+ PORT)
     else 
